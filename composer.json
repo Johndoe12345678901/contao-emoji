@@ -1,0 +1,37 @@
+{
+    "name": "null0815/contao-emoji",
+    "description": "Emoji support for Contao",
+    "keywords": ["contao", "emoji", "emoticon", "smiley"],
+    "type": "contao-module",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Gerhard Tilg",
+            "email": "gerhard.tilg@null0815.at",
+            "homepage": "http://www.null0815.at/",
+            "role": "CEO"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/null0815/contao-emoji/issues",
+        "wiki": "https://github.com/null0815/contao-emoji/wiki",
+        "source": "https://github.com/null0815/contao-emoji",
+        "docs": "https://github.com/null0815/contao-emoji"
+    },
+    "require": {
+        "php": ">=5.6",
+        "contao/core": "~3.5",
+        "contao-community-alliance/composer-installer": "*",
+        "emojione/emojione": "^2.2"
+    },
+    "replace": {
+        "contao-legacy/summary": "self.version"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "system/modules/emoji": "system/modules/emoji"
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="system/modules/emoji/plugins/emojionearea/dist/emojionearea.min.css">
+<script src="system/modules/emoji/plugins/emojionearea/dist/emojionearea.min.js"></script>
+
+<style>
+    .emojionearea .emojionearea-editor { padding: 0; }
+    .emojionearea.focused { box-shadow: none; }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("textarea").emojioneArea({
+            shortnames: true
+        });
+    });
+</script>
