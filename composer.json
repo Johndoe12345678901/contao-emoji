@@ -25,7 +25,7 @@
         "emojione/emojione": "^2.2"
     },
     "replace": {
-        "contao-legacy/summary": "self.version"
+        "contao-legacy/emoji": "self.version"
     },
     "extra": {
         "contao": {
