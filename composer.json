@@ -30,7 +30,7 @@
     "extra": {
         "contao": {
             "sources": {
-                ".": "system/modules/emoji"
+                "./": "system/modules/emoji"
             }
         }
     }
