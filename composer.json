@@ -26,5 +26,12 @@
     },
     "replace": {
         "contao-legacy/emoji": "self.version"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "": "system/modules/emoji"
+            }
+        }
     }
 }
