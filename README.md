@@ -17,7 +17,7 @@ Using shortnames, like `:kissing_heart:` or `:poop:`.
 You can also use the `{{emoji}}` insert tag, like `{{emoji::joy}}`, `{{emoji::smiley_cat}}` or `{{emoji::heart}}`.
 
 ### Unicode
-Unfortunately, there is no support for unicode emoji **in the backend** yet. To store 4 bytes emoji in the database, you would've to use at least MySQL 5.5.3 with the character set `utf8mb4` and tweak your config (supposed to work with Contao 4 ootb). A workaround would be to use submit/save callbacks across all tables/fields (or at least the tinyMCE ones). I don't feel like this is a good idea. If you really want to use unicode emoji, it's best to wrap them in insert tags, like `{{emoji::😄}}`;
+Unfortunately, there is no support for unicode emoji **in the backend** yet. To store 4 bytes emoji in the database, you would've to use at least MySQL 5.5.3 with the character set `utf8mb4` and tweak your config (supposed to work with Contao 4 ootb). A workaround would be to use submit/save callbacks across all tables/fields (or at least the tinyMCE ones). 
 
 ### ASCII
 Though set up, I don't know why it isn't working. :cry:
