@@ -21,6 +21,9 @@ class Emoji {
 
     public static $client;
 
+    /**
+     * Setup emoji client
+     */
     public function __construct() {
 
         self::$client = new Client(new Ruleset());
@@ -30,12 +33,27 @@ class Emoji {
 
     }
 
+    /**
+     * Replace ASCII/shortnames with emoji
+     *
+     * @param $strBuffer
+     * @param $strTemplate
+     *
+     * @return string
+     */
     public function parseFrontendTemplate($strBuffer, $strTemplate) {
 
         return self::$client->toImage($strBuffer);
 
     }
 
+    /**
+     * Convert emoji to their appropriate shortname
+     *
+     * @param $arrPost
+     * @param $arrForm
+     * @param $arrFiles
+     */
     public function processFormData($arrPost, $arrForm, $arrFiles) {
 
         foreach($arrPost as $data) {
@@ -46,6 +64,13 @@ class Emoji {
 
     }
 
+    /**
+     * Replace {{emoji::*}} insert tags
+     *
+     * @param $strTag
+     *
+     * @return string
+     */
     public function replaceInsertTags($strTag) {
 
         $arrSplit = explode('::', $strTag);

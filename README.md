@@ -14,18 +14,18 @@ There are 4 ways to use emoji in [Contao](https://contao.org/).
 Using shortnames, like `:kissing_heart:` or `:poop:`.
 
 ### Insert tags
-You can also use the `{{emoji}}` insert tag, like `{{emoji::joy}}`, `{{emoji::smiley_cat}}` or `{{emoji::heart}}`.
+You can also use the `{{emoji}}` insert tags, like `{{emoji::joy}}`, `{{emoji::smiley_cat}}` or `{{emoji::heart}}`.
 
 ### Unicode
-Unfortunately, there is no support for unicode emoji **in the backend** yet. To store 4 bytes emoji in the database, you would've to use at least MySQL 5.5.3 with the character set `utf8mb4` and tweak your config (supposed to work with Contao 4 ootb). A workaround would be to use submit/save callbacks across all tables/fields (or at least the tinyMCE ones). 
+To store 4 bytes emoji in the database, you need to use at least MySQL 5.5.3 with the character set `utf8mb4`. 
 
 ### ASCII
-Though set up, I don't know why it isn't working. :cry:
+Though set up, it isn't working yet. :cry:
 
 ## Frontend
 This extension also provides a WYSIWYG like [emoji picker](https://github.com/mervick/emojionearea) for your frontend forms. To do so, include the `j_emojionearea` template in your layout. The necessary `processFormData` hook is already setup to convert all emoji to their appropriate shortcode.
 
-You may set the size of emoji on your own:
+**Set the size**
 
 ```
 .emojione,
