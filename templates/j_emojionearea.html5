@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="system/modules/emoji/plugins/emojionearea/dist/emojionearea.min.css">
-<script src="system/modules/emoji/plugins/emojionearea/dist/emojionearea.min.js"></script>
+<?php $GLOBALS['TL_CSS'][] = 'system/modules/emoji/plugins/emojionearea/dist/emojionearea.min.css'; ?>
+<?php $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/emoji/plugins/emojionearea/dist/emojionearea.min.js';?>
 
 <style>
     .emojionearea .emojionearea-editor { padding: 0; }
